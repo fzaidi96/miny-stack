@@ -8,7 +8,9 @@ console.log("test");
 // so how do we call an api - with fetch
 
 async function getMessage() {
-  const response = await fetch("http://localhost:8080/message");
+  const response = await fetch(
+    "https://miny-stack-server-dxd3.onrender.com/message"
+  );
   // after we got the response from the api with fetch, we gonna turn it into json
   const json = await response.json();
   // now display message with DOM maniuplation
